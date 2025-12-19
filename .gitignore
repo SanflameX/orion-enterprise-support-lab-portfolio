@@ -1,0 +1,27 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary / cache
+*.tmp
+*.bak
+*.log
+
+# VMware and virtual disks (NEVER upload)
+*.vmx
+*.vmxf
+*.vmsd
+*.vmsn
+*.nvram
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+
+# ISO images
+*.iso
+
+# Windows dumps
+*.dmp
