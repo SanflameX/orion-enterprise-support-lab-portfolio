@@ -1,0 +1,331 @@
+﻿
+Directory Server Diagnosis
+
+
+Performing initial setup:
+
+   Trying to find home server...
+
+   * Verifying that the local machine ORION-L-DC01, is a Directory Server. 
+   Home Server = ORION-L-DC01
+
+   * Connecting to directory service on server ORION-L-DC01.
+
+   * Identified AD Forest. 
+   Collecting AD specific global data 
+   * Collecting site info.
+
+   Calling ldap_search_init_page(hld,CN=Sites,CN=Configuration,DC=orion,DC=lab,LDAP_SCOPE_SUBTREE,(objectCategory=ntDSSiteSettings),.......
+   The previous call succeeded 
+   Iterating through the sites 
+   Looking at base site object: CN=NTDS Site Settings,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=orion,DC=lab
+   Getting ISTG and options for the site
+   * Identifying all servers.
+
+   Calling ldap_search_init_page(hld,CN=Sites,CN=Configuration,DC=orion,DC=lab,LDAP_SCOPE_SUBTREE,(objectClass=ntDSDsa),.......
+   The previous call succeeded....
+   The previous call succeeded
+   Iterating through the list of servers 
+   Getting information for the server CN=NTDS Settings,CN=ORION-L-DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=orion,DC=lab 
+   objectGuid obtained
+   InvocationID obtained
+   dnsHostname obtained
+   site info obtained
+   All the info for the server collected
+   * Identifying all NC cross-refs.
+
+   * Found 1 DC(s). Testing 1 of them.
+
+   Done gathering initial info.
+
+
+Doing initial required tests
+
+   
+   Testing server: Default-First-Site-Name\ORION-L-DC01
+
+      Starting test: Connectivity
+
+         * Active Directory LDAP Services Check
+         Determining IP4 connectivity 
+         * Active Directory RPC Services Check
+         ......................... ORION-L-DC01 passed test Connectivity
+
+
+
+Doing primary tests
+
+   
+   Testing server: Default-First-Site-Name\ORION-L-DC01
+
+      Starting test: Advertising
+
+         The DC ORION-L-DC01 is advertising itself as a DC and having a DS.
+         The DC ORION-L-DC01 is advertising as an LDAP server
+         The DC ORION-L-DC01 is advertising as having a writeable directory
+         The DC ORION-L-DC01 is advertising as a Key Distribution Center
+         The DC ORION-L-DC01 is advertising as a time server
+         The DS ORION-L-DC01 is advertising as a GC.
+         ......................... ORION-L-DC01 passed test Advertising
+
+      Test omitted by user request: CheckSecurityError
+
+      Test omitted by user request: CutoffServers
+
+      Starting test: FrsEvent
+
+         * The File Replication Service Event log test 
+         Skip the test because the server is running DFSR.
+
+         ......................... ORION-L-DC01 passed test FrsEvent
+
+      Starting test: DFSREvent
+
+         The DFS Replication Event Log. 
+         ......................... ORION-L-DC01 passed test DFSREvent
+
+      Starting test: SysVolCheck
+
+         * The File Replication Service SYSVOL ready test 
+         File Replication Service's SYSVOL is ready 
+         ......................... ORION-L-DC01 passed test SysVolCheck
+
+      Starting test: KccEvent
+
+         * The KCC Event log test
+         Found no KCC errors in "Directory Service" Event log in the last 15 minutes.
+         ......................... ORION-L-DC01 passed test KccEvent
+
+      Starting test: KnowsOfRoleHolders
+
+         Role Schema Owner = CN=NTDS Settings,CN=ORION-L-DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=orion,DC=lab
+         Role Domain Owner = CN=NTDS Settings,CN=ORION-L-DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=orion,DC=lab
+         Role PDC Owner = CN=NTDS Settings,CN=ORION-L-DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=orion,DC=lab
+         Role Rid Owner = CN=NTDS Settings,CN=ORION-L-DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=orion,DC=lab
+         Role Infrastructure Update Owner = CN=NTDS Settings,CN=ORION-L-DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=orion,DC=lab
+         ......................... ORION-L-DC01 passed test KnowsOfRoleHolders
+
+      Starting test: MachineAccount
+
+         Checking machine account for DC ORION-L-DC01 on DC ORION-L-DC01.
+         * SPN found :LDAP/ORION-L-DC01.orion.lab/orion.lab
+         * SPN found :LDAP/ORION-L-DC01.orion.lab
+         * SPN found :LDAP/ORION-L-DC01
+         * SPN found :LDAP/ORION-L-DC01.orion.lab/ORION
+         * SPN found :LDAP/59453997-bb4c-4490-821e-50bdd197cc27._msdcs.orion.lab
+         * SPN found :E3514235-4B06-11D1-AB04-00C04FC2DCD2/59453997-bb4c-4490-821e-50bdd197cc27/orion.lab
+         * SPN found :HOST/ORION-L-DC01.orion.lab/orion.lab
+         * SPN found :HOST/ORION-L-DC01.orion.lab
+         * SPN found :HOST/ORION-L-DC01
+         * SPN found :HOST/ORION-L-DC01.orion.lab/ORION
+         * SPN found :GC/ORION-L-DC01.orion.lab/orion.lab
+         ......................... ORION-L-DC01 passed test MachineAccount
+
+      Starting test: NCSecDesc
+
+         * Security Permissions check for all NC's on DC ORION-L-DC01.
+         * Security Permissions Check for
+
+           DC=ForestDnsZones,DC=orion,DC=lab
+            (NDNC,Version 3)
+         * Security Permissions Check for
+
+           DC=DomainDnsZones,DC=orion,DC=lab
+            (NDNC,Version 3)
+         * Security Permissions Check for
+
+           CN=Schema,CN=Configuration,DC=orion,DC=lab
+            (Schema,Version 3)
+         * Security Permissions Check for
+
+           CN=Configuration,DC=orion,DC=lab
+            (Configuration,Version 3)
+         * Security Permissions Check for
+
+           DC=orion,DC=lab
+            (Domain,Version 3)
+         ......................... ORION-L-DC01 passed test NCSecDesc
+
+      Starting test: NetLogons
+
+         * Network Logons Privileges Check
+         Verified share \\ORION-L-DC01\netlogon
+         Verified share \\ORION-L-DC01\sysvol
+         ......................... ORION-L-DC01 passed test NetLogons
+
+      Starting test: ObjectsReplicated
+
+         ORION-L-DC01 is in domain DC=orion,DC=lab
+         Checking for CN=ORION-L-DC01,OU=Domain Controllers,DC=orion,DC=lab in domain DC=orion,DC=lab on 1 servers
+            Object is up-to-date on all servers.
+         Checking for CN=NTDS Settings,CN=ORION-L-DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=orion,DC=lab in domain CN=Configuration,DC=orion,DC=lab on 1 servers
+            Object is up-to-date on all servers.
+         ......................... ORION-L-DC01 passed test ObjectsReplicated
+
+      Test omitted by user request: OutboundSecureChannels
+
+      Starting test: Replications
+
+         * Replications Check
+         * Replication Latency Check
+         ......................... ORION-L-DC01 passed test Replications
+
+      Starting test: RidManager
+
+         * Available RID Pool for the Domain is 1600 to 1073741823
+         * ORION-L-DC01.orion.lab is the RID Master
+         * DsBind with RID Master was successful
+         * rIDAllocationPool is 1100 to 1599
+         * rIDPreviousAllocationPool is 1100 to 1599
+         * rIDNextRID: 1119
+         ......................... ORION-L-DC01 passed test RidManager
+
+      Starting test: Services
+
+         * Checking Service: EventSystem
+         * Checking Service: RpcSs
+         * Checking Service: NTDS
+         * Checking Service: DnsCache
+         * Checking Service: DFSR
+         * Checking Service: IsmServ
+         * Checking Service: kdc
+         * Checking Service: SamSs
+         * Checking Service: LanmanServer
+         * Checking Service: LanmanWorkstation
+         * Checking Service: w32time
+         * Checking Service: NETLOGON
+         ......................... ORION-L-DC01 passed test Services
+
+      Starting test: SystemLog
+
+         * The System Event log test
+         Found no errors in "System" Event log in the last 60 minutes.
+         ......................... ORION-L-DC01 passed test SystemLog
+
+      Test omitted by user request: Topology
+
+      Test omitted by user request: VerifyEnterpriseReferences
+
+      Starting test: VerifyReferences
+
+         The system object reference (serverReference)
+
+         CN=ORION-L-DC01,OU=Domain Controllers,DC=orion,DC=lab and backlink on
+
+         CN=ORION-L-DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=orion,DC=lab
+
+         are correct. 
+         The system object reference (serverReferenceBL)
+
+         CN=ORION-L-DC01,CN=Topology,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=orion,DC=lab
+
+         and backlink on
+
+         CN=NTDS Settings,CN=ORION-L-DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=orion,DC=lab
+
+         are correct. 
+         The system object reference (msDFSR-ComputerReferenceBL)
+
+         CN=ORION-L-DC01,CN=Topology,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=orion,DC=lab
+
+         and backlink on CN=ORION-L-DC01,OU=Domain Controllers,DC=orion,DC=lab
+
+         are correct. 
+         ......................... ORION-L-DC01 passed test VerifyReferences
+
+      Test omitted by user request: VerifyReplicas
+
+   
+      Test omitted by user request: DNS
+
+      Test omitted by user request: DNS
+
+   
+   Running partition tests on : ForestDnsZones
+
+      Starting test: CheckSDRefDom
+
+         ......................... ForestDnsZones passed test CheckSDRefDom
+
+      Starting test: CrossRefValidation
+
+         ......................... ForestDnsZones passed test
+
+         CrossRefValidation
+
+   
+   Running partition tests on : DomainDnsZones
+
+      Starting test: CheckSDRefDom
+
+         ......................... DomainDnsZones passed test CheckSDRefDom
+
+      Starting test: CrossRefValidation
+
+         ......................... DomainDnsZones passed test
+
+         CrossRefValidation
+
+   
+   Running partition tests on : Schema
+
+      Starting test: CheckSDRefDom
+
+         ......................... Schema passed test CheckSDRefDom
+
+      Starting test: CrossRefValidation
+
+         ......................... Schema passed test CrossRefValidation
+
+   
+   Running partition tests on : Configuration
+
+      Starting test: CheckSDRefDom
+
+         ......................... Configuration passed test CheckSDRefDom
+
+      Starting test: CrossRefValidation
+
+         ......................... Configuration passed test CrossRefValidation
+
+   
+   Running partition tests on : orion
+
+      Starting test: CheckSDRefDom
+
+         ......................... orion passed test CheckSDRefDom
+
+      Starting test: CrossRefValidation
+
+         ......................... orion passed test CrossRefValidation
+
+   
+   Running enterprise tests on : orion.lab
+
+      Test omitted by user request: DNS
+
+      Test omitted by user request: DNS
+
+      Starting test: LocatorCheck
+
+         GC Name: \\ORION-L-DC01.orion.lab
+
+         Locator Flags: 0xe007f3fd
+         PDC Name: \\ORION-L-DC01.orion.lab
+         Locator Flags: 0xe007f3fd
+         Time Server Name: \\ORION-L-DC01.orion.lab
+         Locator Flags: 0xe007f3fd
+         Preferred Time Server Name: \\ORION-L-DC01.orion.lab
+         Locator Flags: 0xe007f3fd
+         KDC Name: \\ORION-L-DC01.orion.lab
+         Locator Flags: 0xe007f3fd
+         ......................... orion.lab passed test LocatorCheck
+
+      Starting test: Intersite
+
+         Skipping site Default-First-Site-Name, this site is outside the scope
+
+         provided by the command line arguments provided. 
+         ......................... orion.lab passed test Intersite
+
+

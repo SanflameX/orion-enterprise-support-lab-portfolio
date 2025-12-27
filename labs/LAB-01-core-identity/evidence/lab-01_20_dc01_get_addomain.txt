@@ -1,0 +1,12 @@
+﻿
+
+DNSRoot              : orion.lab
+NetBIOSName          : ORION
+DomainMode           : Windows2025Domain
+PDCEmulator          : ORION-L-DC01.orion.lab
+RIDMaster            : ORION-L-DC01.orion.lab
+InfrastructureMaster : ORION-L-DC01.orion.lab
+
+
+
+

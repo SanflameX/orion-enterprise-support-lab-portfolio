@@ -1,0 +1,10 @@
+﻿           DC: \\ORION-L-DC01.orion.lab
+      Address: \\10.70.10.10
+     Dom Guid: 79b93829-ecc3-4ba6-a700-272ae50fce25
+     Dom Name: orion.lab
+  Forest Name: orion.lab
+ Dc Site Name: Default-First-Site-Name
+Our Site Name: Default-First-Site-Name
+        Flags: PDC GC DS LDAP KDC TIMESERV GTIMESERV WRITABLE DNS_DC DNS_DOMAIN DNS_FOREST CLOSE_SITE FULL_SECRET WS DS_8 DS_9 DS_10 KEYLIST DS_13
+The command completed successfully
+

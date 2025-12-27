@@ -1,0 +1,13 @@
+﻿
+Share name   Resource                        Remark
+
+-------------------------------------------------------------------------------
+C$           C:\                             Default share                     
+IPC$                                         Remote IPC                        
+ADMIN$       C:\WINDOWS                      Remote Admin                      
+NETLOGON     C:\WINDOWS\SYSVOL\sysvol\orion.lab\SCRIPTS
+                                             Logon server share                
+SYSVOL       C:\WINDOWS\SYSVOL\sysvol        Logon server share                
+The command completed successfully.
+
+

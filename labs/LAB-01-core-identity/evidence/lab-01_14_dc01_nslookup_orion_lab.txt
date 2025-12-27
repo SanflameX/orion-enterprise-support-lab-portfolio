@@ -1,0 +1,7 @@
+﻿Server:  ORION-L-DC01.orion.lab
+Address:  10.70.10.10
+
+Name:    orion.lab
+Address:  10.70.10.10
+
+

@@ -1,0 +1,10 @@
+﻿
+
+Name     : DNS Servers
+OptionId : 6
+Type     : IPv4Address
+Value    : {10.70.10.10}
+
+
+
+

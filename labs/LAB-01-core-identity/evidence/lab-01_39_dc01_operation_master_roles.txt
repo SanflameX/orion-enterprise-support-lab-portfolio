@@ -1,0 +1,8 @@
+﻿Schema master               ORION-L-DC01.orion.lab
+Domain naming master        ORION-L-DC01.orion.lab
+PDC                         ORION-L-DC01.orion.lab
+RID pool manager            ORION-L-DC01.orion.lab
+Infrastructure master       ORION-L-DC01.orion.lab
+The command completed successfully.
+
+

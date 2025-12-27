@@ -1,0 +1,182 @@
+﻿
+
+TimeCreated      : 12/26/2025 4:27:19 AM
+Id               : 1210
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully set up an RPC listener for incoming replication requests. 
+                    
+                   Additional Information: 
+                   Port: 0
+
+TimeCreated      : 12/26/2025 4:27:07 AM
+Id               : 1206
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully contacted domain controller ORION-L-DC01.orion.lab to access configuration information.
+
+TimeCreated      : 12/26/2025 4:26:51 AM
+Id               : 6102
+LevelDisplayName : Information
+Message          : The DFS Replication service has successfully registered the WMI provider.
+
+TimeCreated      : 12/26/2025 4:26:49 AM
+Id               : 1314
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully configured the debug log files. 
+                    
+                   Additional Information: 
+                   Debug Log File Path: C:\WINDOWS\debug
+
+TimeCreated      : 12/26/2025 4:26:49 AM
+Id               : 1004
+LevelDisplayName : Information
+Message          : The DFS Replication service has started.
+
+TimeCreated      : 12/26/2025 4:26:49 AM
+Id               : 1002
+LevelDisplayName : Information
+Message          : The DFS Replication service is starting.
+
+TimeCreated      : 12/26/2025 4:25:57 AM
+Id               : 1006
+LevelDisplayName : Information
+Message          : The DFS Replication service is stopping.
+
+TimeCreated      : 12/26/2025 4:13:47 AM
+Id               : 1210
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully set up an RPC listener for incoming replication requests. 
+                    
+                   Additional Information: 
+                   Port: 0
+
+TimeCreated      : 12/26/2025 4:13:35 AM
+Id               : 1206
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully contacted domain controller ORION-L-DC01.orion.lab to access configuration information.
+
+TimeCreated      : 12/26/2025 4:13:19 AM
+Id               : 6102
+LevelDisplayName : Information
+Message          : The DFS Replication service has successfully registered the WMI provider.
+
+TimeCreated      : 12/26/2025 4:13:17 AM
+Id               : 1314
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully configured the debug log files. 
+                    
+                   Additional Information: 
+                   Debug Log File Path: C:\WINDOWS\debug
+
+TimeCreated      : 12/26/2025 4:13:17 AM
+Id               : 1004
+LevelDisplayName : Information
+Message          : The DFS Replication service has started.
+
+TimeCreated      : 12/26/2025 4:13:17 AM
+Id               : 1002
+LevelDisplayName : Information
+Message          : The DFS Replication service is starting.
+
+TimeCreated      : 12/26/2025 4:09:56 AM
+Id               : 1006
+LevelDisplayName : Information
+Message          : The DFS Replication service is stopping.
+
+TimeCreated      : 12/26/2025 3:53:29 AM
+Id               : 1210
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully set up an RPC listener for incoming replication requests. 
+                    
+                   Additional Information: 
+                   Port: 0
+
+TimeCreated      : 12/26/2025 3:53:17 AM
+Id               : 1206
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully contacted domain controller ORION-L-DC01.orion.lab to access configuration information.
+
+TimeCreated      : 12/26/2025 3:53:01 AM
+Id               : 6102
+LevelDisplayName : Information
+Message          : The DFS Replication service has successfully registered the WMI provider.
+
+TimeCreated      : 12/26/2025 3:52:59 AM
+Id               : 1314
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully configured the debug log files. 
+                    
+                   Additional Information: 
+                   Debug Log File Path: C:\WINDOWS\debug
+
+TimeCreated      : 12/26/2025 3:52:59 AM
+Id               : 1004
+LevelDisplayName : Information
+Message          : The DFS Replication service has started.
+
+TimeCreated      : 12/26/2025 3:52:59 AM
+Id               : 1002
+LevelDisplayName : Information
+Message          : The DFS Replication service is starting.
+
+TimeCreated      : 12/26/2025 3:52:02 AM
+Id               : 1006
+LevelDisplayName : Information
+Message          : The DFS Replication service is stopping.
+
+TimeCreated      : 12/26/2025 3:46:33 AM
+Id               : 1210
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully set up an RPC listener for incoming replication requests. 
+                    
+                   Additional Information: 
+                   Port: 0
+
+TimeCreated      : 12/26/2025 3:46:21 AM
+Id               : 1206
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully contacted domain controller ORION-L-DC01.orion.lab to access configuration information.
+
+TimeCreated      : 12/26/2025 3:46:07 AM
+Id               : 6102
+LevelDisplayName : Information
+Message          : The DFS Replication service has successfully registered the WMI provider.
+
+TimeCreated      : 12/26/2025 3:46:06 AM
+Id               : 1314
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully configured the debug log files. 
+                    
+                   Additional Information: 
+                   Debug Log File Path: C:\WINDOWS\debug
+
+TimeCreated      : 12/26/2025 3:46:06 AM
+Id               : 1004
+LevelDisplayName : Information
+Message          : The DFS Replication service has started.
+
+TimeCreated      : 12/26/2025 3:46:06 AM
+Id               : 1002
+LevelDisplayName : Information
+Message          : The DFS Replication service is starting.
+
+TimeCreated      : 12/26/2025 3:45:37 AM
+Id               : 1006
+LevelDisplayName : Information
+Message          : The DFS Replication service is stopping.
+
+TimeCreated      : 12/26/2025 3:40:49 AM
+Id               : 1210
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully set up an RPC listener for incoming replication requests. 
+                    
+                   Additional Information: 
+                   Port: 0
+
+TimeCreated      : 12/26/2025 3:40:37 AM
+Id               : 1206
+LevelDisplayName : Information
+Message          : The DFS Replication service successfully contacted domain controller ORION-L-DC01.orion.lab to access configuration information.
+
+
+
+

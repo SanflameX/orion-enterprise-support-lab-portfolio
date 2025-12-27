@@ -1,0 +1,8 @@
+﻿
+IPAddress    ScopeId    ClientId          Name                     Type Description         
+---------    -------    --------          ----                     ---- -----------         
+10.70.10.100 10.70.10.0 00-0c-29-70-6b-49 ORION-L-W11-01.orion.lab Both Windows 11 Client 01
+10.70.10.101 10.70.10.0 00-0c-29-84-d8-09 ORION-L-W11-02.orion.lab Both Windows 11 Client 02
+
+
+

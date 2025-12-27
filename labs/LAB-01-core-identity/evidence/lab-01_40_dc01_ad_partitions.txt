@@ -1,0 +1,6 @@
+﻿DC=ForestDnsZones,DC=orion,DC=lab
+DC=DomainDnsZones,DC=orion,DC=lab
+CN=Schema,CN=Configuration,DC=orion,DC=lab
+CN=Configuration,DC=orion,DC=lab
+DC=orion,DC=lab
+

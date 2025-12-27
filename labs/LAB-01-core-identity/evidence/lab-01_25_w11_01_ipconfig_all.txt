@@ -1,0 +1,29 @@
+﻿
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : ORION-L-W11-01
+   Primary Dns Suffix  . . . . . . . : orion.lab
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : orion.lab
+
+Ethernet adapter Ethernet0:
+
+   Connection-specific DNS Suffix  . : orion.lab
+   Description . . . . . . . . . . . : Intel(R) 82574L Gigabit Network Connection
+   Physical Address. . . . . . . . . : 00-0C-29-70-6B-49
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::e33f:e8c3:2911:f7c0%11(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 10.70.10.100(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Tuesday, December 23, 2025 1:08:10 AM
+   Lease Expires . . . . . . . . . . : Wednesday, December 31, 2025 1:08:10 AM
+   Default Gateway . . . . . . . . . : 
+   DHCP Server . . . . . . . . . . . : 10.70.10.10
+   DHCPv6 IAID . . . . . . . . . . . : 83889193
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-30-D7-03-B4-00-0C-29-70-6B-49
+   DNS Servers . . . . . . . . . . . : 10.70.10.10
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+

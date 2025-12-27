@@ -1,0 +1,12 @@
+﻿
+
+HostName               : ORION-L-DC01.orion.lab
+Site                   : Default-First-Site-Name
+IPv4Address            : 10.70.10.10
+IsGlobalCatalog        : True
+OperatingSystem        : Windows Server 2025 Standard Evaluation
+OperatingSystemVersion : 10.0 (26100)
+
+
+
+

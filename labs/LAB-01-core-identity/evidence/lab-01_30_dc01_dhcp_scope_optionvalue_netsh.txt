@@ -1,0 +1,24 @@
+﻿
+Changed the current scope context to 10.70.10.0 scope.
+
+Options for Scope 10.70.10.0:
+
+	DHCP Standard Options :
+	General Option Values:
+	OptionId : 51 
+	Option Value: 
+		Number of Option Elements = 1
+		Option Element Type = DWORD
+		Option Element Value = 691200
+	OptionId : 15 
+	Option Value: 
+		Number of Option Elements = 1
+		Option Element Type = STRING
+		Option Element Value = orion.lab
+	OptionId : 6 
+	Option Value: 
+		Number of Option Elements = 1
+		Option Element Type = IPADDRESS
+		Option Element Value = 10.70.10.10
+Command completed successfully.
+

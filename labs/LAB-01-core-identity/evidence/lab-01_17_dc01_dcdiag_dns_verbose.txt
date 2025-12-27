@@ -1,0 +1,381 @@
+﻿
+Directory Server Diagnosis
+
+
+Performing initial setup:
+
+   Trying to find home server...
+
+   * Verifying that the local machine ORION-L-DC01, is a Directory Server. 
+   Home Server = ORION-L-DC01
+
+   * Connecting to directory service on server ORION-L-DC01.
+
+   * Identified AD Forest. 
+   Collecting AD specific global data 
+   * Collecting site info.
+
+   Calling ldap_search_init_page(hld,CN=Sites,CN=Configuration,DC=orion,DC=lab,LDAP_SCOPE_SUBTREE,(objectCategory=ntDSSiteSettings),.......
+   The previous call succeeded 
+   Iterating through the sites 
+   Looking at base site object: CN=NTDS Site Settings,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=orion,DC=lab
+   Getting ISTG and options for the site
+   * Identifying all servers.
+
+   Calling ldap_search_init_page(hld,CN=Sites,CN=Configuration,DC=orion,DC=lab,LDAP_SCOPE_SUBTREE,(objectClass=ntDSDsa),.......
+   The previous call succeeded....
+   The previous call succeeded
+   Iterating through the list of servers 
+   Getting information for the server CN=NTDS Settings,CN=ORION-L-DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=orion,DC=lab 
+   objectGuid obtained
+   InvocationID obtained
+   dnsHostname obtained
+   site info obtained
+   All the info for the server collected
+   * Identifying all NC cross-refs.
+
+   * Found 1 DC(s). Testing 1 of them.
+
+   Done gathering initial info.
+
+
+Doing initial required tests
+
+   
+   Testing server: Default-First-Site-Name\ORION-L-DC01
+
+      Starting test: Connectivity
+
+         * Active Directory LDAP Services Check
+         Determining IP4 connectivity 
+         * Active Directory RPC Services Check
+         ......................... ORION-L-DC01 passed test Connectivity
+
+
+
+Doing primary tests
+
+   
+   Testing server: Default-First-Site-Name\ORION-L-DC01
+
+      Test omitted by user request: Advertising
+
+      Test omitted by user request: CheckSecurityError
+
+      Test omitted by user request: CutoffServers
+
+      Test omitted by user request: FrsEvent
+
+      Test omitted by user request: DFSREvent
+
+      Test omitted by user request: SysVolCheck
+
+      Test omitted by user request: KccEvent
+
+      Test omitted by user request: KnowsOfRoleHolders
+
+      Test omitted by user request: MachineAccount
+
+      Test omitted by user request: NCSecDesc
+
+      Test omitted by user request: NetLogons
+
+      Test omitted by user request: ObjectsReplicated
+
+      Test omitted by user request: OutboundSecureChannels
+
+      Test omitted by user request: Replications
+
+      Test omitted by user request: RidManager
+
+      Test omitted by user request: Services
+
+      Test omitted by user request: SystemLog
+
+      Test omitted by user request: Topology
+
+      Test omitted by user request: VerifyEnterpriseReferences
+
+      Test omitted by user request: VerifyReferences
+
+      Test omitted by user request: VerifyReplicas
+
+   
+      Starting test: DNS
+
+         
+
+         DNS Tests are running and not hung. Please wait a few minutes...
+
+         See DNS test in enterprise tests section for results
+         ......................... ORION-L-DC01 passed test DNS
+
+   
+   Running partition tests on : ForestDnsZones
+
+      Test omitted by user request: CheckSDRefDom
+
+      Test omitted by user request: CrossRefValidation
+
+   
+   Running partition tests on : DomainDnsZones
+
+      Test omitted by user request: CheckSDRefDom
+
+      Test omitted by user request: CrossRefValidation
+
+   
+   Running partition tests on : Schema
+
+      Test omitted by user request: CheckSDRefDom
+
+      Test omitted by user request: CrossRefValidation
+
+   
+   Running partition tests on : Configuration
+
+      Test omitted by user request: CheckSDRefDom
+
+      Test omitted by user request: CrossRefValidation
+
+   
+   Running partition tests on : orion
+
+      Test omitted by user request: CheckSDRefDom
+
+      Test omitted by user request: CrossRefValidation
+
+   
+   Running enterprise tests on : orion.lab
+
+      Starting test: DNS
+
+         Test results for domain controllers:
+
+            
+            DC: ORION-L-DC01.orion.lab
+
+            Domain: orion.lab
+
+            
+
+                  
+               TEST: Authentication (Auth)
+                  Authentication test: Successfully completed
+                  
+               TEST: Basic (Basc)
+                  The OS
+
+                  Microsoft Windows Server 2025 Standard Evaluation (Service Pack level: 0.0)
+
+                  is supported.
+
+                  NETLOGON service is running
+
+                  kdc service is running
+
+                  DNSCACHE service is running
+
+                  DNS service is running
+
+                  DC is a DNS server
+
+                  Network adapters information:
+
+                  Adapter
+
+                  [00000001] Intel(R) 82574L Gigabit Network Connection:
+
+                     MAC address is 00:0C:29:72:6D:51
+                     IP Address is static 
+                     IP address: 10.70.10.10, fe80::28c6:2639:9dd4:30ea
+                     DNS servers:
+
+                        10.70.10.10 (orion-l-dc01.orion.lab.) [Valid]
+                  The A host record(s) for this DC was found
+                  The SOA record for the Active Directory zone was found
+                  The Active Directory zone on this DC/DNS server was found primary
+                  Root zone on this DC/DNS server was not found
+                  
+               TEST: Forwarders/Root hints (Forw)
+                  Recursion is enabled
+                  Forwarders are not configured on this DNS server
+                  Root hint Information: 
+                     Name: A.ROOT-SERVERS.NET. IP: 2001:503:ba3e::2:30 [Valid]
+                     Name: B.ROOT-SERVERS.NET. IP: 2001:500:84::b [Valid]
+                     Name: C.ROOT-SERVERS.NET. IP: 2001:500:2::c [Valid]
+                     Name: D.ROOT-SERVERS.NET. IP: 2001:500:2d::d [Valid]
+                     Name: E.ROOT-SERVERS.NET. IP: 192.203.230.10 [Valid]
+                     Name: F.ROOT-SERVERS.NET. IP: 2001:500:2f::f [Valid]
+                     Name: G.ROOT-SERVERS.NET. IP: 192.112.36.4 [Valid]
+                     Name: H.ROOT-SERVERS.NET. IP: 2001:500:1::53 [Valid]
+                     Name: I.ROOT-SERVERS.NET. IP: 2001:7fe::53 [Valid]
+                     Name: J.ROOT-SERVERS.NET. IP: 2001:503:c27::2:30 [Valid]
+                     Name: K.ROOT-SERVERS.NET. IP: 2001:7fd::1 [Valid]
+                     Name: L.ROOT-SERVERS.NET. IP: 2001:500:9f::42 [Valid]
+                     Name: M.ROOT-SERVERS.NET. IP: 2001:dc3::35 [Valid]
+                  
+               TEST: Delegations (Del)
+                  Delegation information for the zone: orion.lab.
+                     Delegated domain name: _msdcs.orion.lab.
+                        DNS server: orion-l-dc01.orion.lab. IP:10.70.10.10 [Valid]
+                  
+               TEST: Dynamic update (Dyn)
+                  Test record dcdiag-test-record added successfully in zone orion.lab
+                  Test record dcdiag-test-record deleted successfully in zone orion.lab
+                  
+               TEST: Records registration (RReg)
+                  Network Adapter
+
+                  [00000001] Intel(R) 82574L Gigabit Network Connection:
+
+                     Matching CNAME record found at DNS server 10.70.10.10:
+                     59453997-bb4c-4490-821e-50bdd197cc27._msdcs.orion.lab
+
+                     Matching A record found at DNS server 10.70.10.10:
+                     ORION-L-DC01.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _ldap._tcp.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _ldap._tcp.79b93829-ecc3-4ba6-a700-272ae50fce25.domains._msdcs.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _kerberos._tcp.dc._msdcs.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _ldap._tcp.dc._msdcs.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _kerberos._tcp.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _kerberos._udp.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _kpasswd._tcp.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _ldap._tcp.Default-First-Site-Name._sites.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _kerberos._tcp.Default-First-Site-Name._sites.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _ldap._tcp.gc._msdcs.orion.lab
+
+                     Matching A record found at DNS server 10.70.10.10:
+                     gc._msdcs.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _gc._tcp.Default-First-Site-Name._sites.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.orion.lab
+
+                     Matching  SRV record found at DNS server 10.70.10.10:
+                     _ldap._tcp.pdc._msdcs.orion.lab
+
+         
+         Summary of test results for DNS servers used by the above domain
+
+         controllers:
+
+         
+
+            DNS server: 10.70.10.10 (orion-l-dc01.orion.lab.)
+
+               All tests passed on this DNS server
+
+               Name resolution is functional._ldap._tcp SRV record for the forest root domain is registered 
+               DNS delegation for the domain  _msdcs.orion.lab. is operational on IP 10.70.10.10
+
+               
+            DNS server: 192.112.36.4 (G.ROOT-SERVERS.NET.)
+
+               All tests passed on this DNS server
+
+               
+            DNS server: 192.203.230.10 (E.ROOT-SERVERS.NET.)
+
+               All tests passed on this DNS server
+
+               
+            DNS server: 2001:500:1::53 (H.ROOT-SERVERS.NET.)
+
+               All tests passed on this DNS server
+
+               
+            DNS server: 2001:500:2::c (C.ROOT-SERVERS.NET.)
+
+               All tests passed on this DNS server
+
+               
+            DNS server: 2001:500:2d::d (D.ROOT-SERVERS.NET.)
+
+               All tests passed on this DNS server
+
+               
+            DNS server: 2001:500:2f::f (F.ROOT-SERVERS.NET.)
+
+               All tests passed on this DNS server
+
+               
+            DNS server: 2001:500:84::b (B.ROOT-SERVERS.NET.)
+
+               All tests passed on this DNS server
+
+               
+            DNS server: 2001:500:9f::42 (L.ROOT-SERVERS.NET.)
+
+               All tests passed on this DNS server
+
+               
+            DNS server: 2001:503:ba3e::2:30 (A.ROOT-SERVERS.NET.)
+
+               All tests passed on this DNS server
+
+               
+            DNS server: 2001:503:c27::2:30 (J.ROOT-SERVERS.NET.)
+
+               All tests passed on this DNS server
+
+               
+            DNS server: 2001:7fd::1 (K.ROOT-SERVERS.NET.)
+
+               All tests passed on this DNS server
+
+               
+            DNS server: 2001:7fe::53 (I.ROOT-SERVERS.NET.)
+
+               All tests passed on this DNS server
+
+               
+            DNS server: 2001:dc3::35 (M.ROOT-SERVERS.NET.)
+
+               All tests passed on this DNS server
+
+               
+         Summary of DNS test results:
+
+         
+                                            Auth Basc Forw Del  Dyn  RReg Ext
+            _________________________________________________________________
+            Domain: orion.lab
+
+               ORION-L-DC01                 PASS PASS PASS PASS PASS PASS n/a  
+         
+         ......................... orion.lab passed test DNS
+
+      Test omitted by user request: LocatorCheck
+
+      Test omitted by user request: Intersite
+
+

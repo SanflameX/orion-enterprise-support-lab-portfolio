@@ -1,0 +1,10 @@
+﻿
+	DHCP Standard Options :
+	General Option Values:
+	OptionId : 81 
+	Option Value: 
+		Number of Option Elements = 1
+		Option Element Type = DWORD
+		Option Element Value = 7
+Command completed successfully.
+

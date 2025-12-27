@@ -1,0 +1,10 @@
+﻿
+
+Name       : orion.lab
+ForestMode : Windows2025Forest
+RootDomain : orion.lab
+Domains    : {orion.lab}
+
+
+
+

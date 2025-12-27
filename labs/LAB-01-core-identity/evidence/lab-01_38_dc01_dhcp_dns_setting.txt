@@ -1,0 +1,11 @@
+﻿
+
+DynamicUpdates             : OnClientRequest
+DeleteDnsRROnLeaseExpiry   : True
+DisableDnsPtrRRUpdate      : False
+UpdateDnsRRForOlderClients : True
+NameProtection             : False
+
+
+
+

@@ -1,0 +1,2 @@
+﻿OptionId 003 (Router) is NOT configured for scope 10.70.10.0
+
