@@ -242,7 +242,3 @@ Copy the generated TXT files from:
 - C:\orion-evidence\LAB-01\
 into:
 - labs/LAB-01-core-identity/evidence/
-
-## Extensions
-The current LAB-01 evidence set ends at lab-01_44. If additional captures are needed later, continue numbering using the next available nn and add the corresponding evidence files under:
-- labs/LAB-01-core-identity/evidence/
